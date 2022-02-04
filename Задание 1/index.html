@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .inputs-field {
+            display: flex;
+            flex-direction: column;
+
+            max-width: 200px;
+        }
+
+        .inputs-field>input{
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="inputs-field">
+        <label for="surname">Введите ваше ФИО</label>
+        <input type="text" id="field" placeholder="Иванов Иван Иванович">
+
+        <button onclick="checkName()">Сохранить</button>
+
+        <label for="surname">Ваша фамилия</label>
+        <input type="text" id="surname" disabled>
+
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" disabled>
+
+        <label for="second-name">Ваше отчество</label>
+        <input type="text" id="second-name" disabled>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
