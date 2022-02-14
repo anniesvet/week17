@@ -14,11 +14,8 @@ function getRandom () {
         }
 
     console.log("Сгенерировали:" + " " + arrOfNumbers);
-    }
 
-getRandom ();
-
-// Максимальное значение (https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/max – для себя, чтобы повторить)
+        // Максимальное значение (https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/max – для себя, чтобы повторить)
 
 function getMaxOfArray(arrOfNumbers) {
     return Math.max.apply(null, arrOfNumbers);
@@ -79,3 +76,7 @@ function mult(arrOfNumbers) {
 }
 
 console.log("Произведение чисел" + " " + mult(arrOfNumbers));
+
+    }
+
+
