@@ -1,8 +1,8 @@
 // Генерация случайных чисел: 
 
-let arrOfNumbers = [];
-
 function getRandom () {
+
+    let arrOfNumbers = [];
 
     function getNumbers(min, max) {
         return Math.round((Math.random() * (max - min + 1)) + min);
