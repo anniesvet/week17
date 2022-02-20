@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
+comment.value = localStorage.getItem('comment');
+    comment.oninput = () => {
+    localStorage.setItem('comment', comment.value)
+    };
+
 function sendMessage (author, comment) {
     document.getElementById("chat").innerHTML = author + ': ' + comment;
 }
