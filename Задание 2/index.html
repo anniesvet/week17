@@ -10,6 +10,8 @@
             display: flex;
             flex-direction: column;
 
+            margin-bottom: 20px;
+
             max-width: 300px;
         }
     </style>
@@ -34,7 +36,12 @@
                     <span id="commentError"></span>
                 </label>
                 <textarea id="comment" class="inputs"></textarea>
+
+                <label for="file">Загрузите фото</label>
+            <input type="file" id="photo" />
             </div>
+
+
             <button onclick="checkMessage()">Отправить</button>
         </form>
     </div>

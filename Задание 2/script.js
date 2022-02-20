@@ -15,9 +15,14 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
-comment.value = localStorage.getItem('comment');
+    comment.value = localStorage.getItem('comment');
     comment.oninput = () => {
     localStorage.setItem('comment', comment.value)
+    };
+
+    photo.value = localStorage.getItem('photo');
+    photo.oninput = () => {
+    localStorage.setItem('photo', photo.value)
     };
 
 function sendMessage (author, comment) {
