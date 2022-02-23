@@ -8,10 +8,13 @@
 // document.getElementById('message').innerHTML = srtringChanged;
 // }
 
+
+// Загрузка имени при обновлении страницы
+
 document.addEventListener("DOMContentLoaded", function(event) {
     let name = localStorage.getItem("name");
-    if(name != null) {
-        document.getElementById("name").value = name;
+    if(name !== null) {
+        document.getElementById("author").value = name;
     }
 });
 
@@ -26,17 +29,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 
 function sendMessage (author, comment) {
-    document.getElementById("chat").innerHTML = author + ': ' + comment;
+    document.getElementById("chat").innerHTML += `${author}: ${comment}`;
 }
 
 function checkMessage() {
     let author = document.getElementById("author").value;
     let comment = document.getElementById("comment").value;
 
-    if(localStorage.getItem('name') == null) {
+    if(localStorage.getItem('name') === null) {
         localStorage.setItem('name', author);
     }
 
     sendMessage(author, comment);
 }
-
